@@ -2,5 +2,44 @@
 @import "./config.scss";
 
 body{
-    background-color: rgb(201, 171, 171);
+    font-size: 12px;
+    color: $FontColor;
+    font-family: 'Microsoft YaHe';
+    background-color: rgb(255, 255, 255);
+    a{
+        color: inherit;
+    }
 }
+
+.container{
+    width:1200px;
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+// clearfix 清除浮动
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+ .clearfix{ display: inline-block; }
+* html .clearfix{ height: 1%; }
+.clearfix { display: block; }

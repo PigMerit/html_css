@@ -38,6 +38,7 @@ module.exports = {
       alias: {
         '@': path.resolve(__dirname, './src'),
         '@c': path.resolve(__dirname, './src/components'),
+        '@a': path.resolve(__dirname, './src/assets'),
         'views': path.resolve(__dirname, './src/views'),
         'network': path.resolve(__dirname, './src/network'),
         'vue': 'vue/dist/vue.js'//这个是从node_modules中找的

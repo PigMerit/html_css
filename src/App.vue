@@ -1,14 +1,29 @@
 <template>
   <div id="app">
-    hello world
+    <Header/>
+    <router-view></router-view>
   </div>
 </template>
+
+<script>
+import Header from '@c/header'
+export default {
+  name:'app',
+  data () {
+    return {
+    };
+  },
+  components:{
+    Header
+  }
+
+}
+</script>
 
 <style lang="scss">
 
 #app {
-  height: 200px;
-  background-color: rgb(233, 213, 199);
+
 }
 
 </style>
