@@ -70,9 +70,7 @@ export default {
 }
 
 </script>
-<style>
-@import "//at.alicdn.com/t/font_2245784_6421zyt0pto.css";
-</style>
+
 <style lang='scss' scoped>
 
 // 整个header的样式
@@ -93,6 +91,7 @@ export default {
         background-color: rgb(236,236,236);
         width: 52px;
         padding: 0 6px 0 8px;
+        margin-bottom: 21px;
         cursor: pointer;
         .icon{
             position: absolute;
@@ -113,7 +112,7 @@ export default {
             line-height: 28px;
             text-align: center;
             background-color: rgb(236,236,236);
-            z-index: 10;
+            z-index: 100;
             li:hover{
                 background-color:rgb(224,224,224);
                 color: $ThemeColorCyan;
@@ -140,6 +139,7 @@ export default {
 .nav-bar{
     display: flex;
     margin-right: -26px;
+    margin-bottom: 17px;
     >li{
         position: relative;
         width: 114px;
@@ -148,7 +148,7 @@ export default {
         color: $ThemeColorBlack;
         font-weight: bold;
         cursor: pointer;
-        z-index: 0;
+        z-index: 10;
         &::after{
                 content: '';
                 position: absolute;

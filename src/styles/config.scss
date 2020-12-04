@@ -3,4 +3,18 @@ $ThemeColorBrown:rgb(180,93,1);
 $ThemeColorBlack:rgb(1,1,1);
 $ThemeColorGray:rgb(153,153,153);
 
-$FontColor:rgb(160,160,160)
+$FontColor:rgb(160,160,160);
+
+@for $i from 1 through 100{
+    .block-height-#{$i}{
+        height:(1px*$i);
+        width:100%
+    }
+}
+
+@mixin ell($number){
+	display:-webkit-box;
+	-webkit-line-clamp:$number;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
+}

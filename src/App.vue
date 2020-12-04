@@ -19,7 +19,9 @@ export default {
 
 }
 </script>
-
+<style>
+@import "//at.alicdn.com/t/font_2245784_mr1vvdhwyq.css";
+</style>
 <style lang="scss">
 
 #app {

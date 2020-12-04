@@ -32,6 +32,11 @@ body{
     display: none;
 }
 
+.upper{
+    text-transform: uppercase
+}
+
+
 // clearfix 清除浮动
 .clearfix:after{
     content: ".";
