@@ -8,6 +8,9 @@
       <SecondSection/>
       <div class="block-height-90"></div>
       <ThirdSection/>
+      <div class="block-height-36"></div>
+      <ForthSection/>
+      <div class="block-height-100"></div>
   </div>
 </template>
 
@@ -16,6 +19,7 @@ import MySwipper from './MySwiper'
 import FirstSection from './FirstSection'
 import SecondSection from './SecondSection'
 import ThirdSection from './ThirdSection'
+import ForthSection from './forthSection'
 export default {
   name:'homeView',
   data () {
@@ -26,7 +30,8 @@ export default {
       MySwipper,
       FirstSection,
       SecondSection,
-      ThirdSection
+      ThirdSection,
+      ForthSection
   }
 }
 

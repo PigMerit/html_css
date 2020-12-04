@@ -45,9 +45,10 @@ export default {
 <style lang='scss' scoped>
 #third-section {
   background-color: #f6f6f6;
+  padding-bottom:15px;
 }
 .el-carousel {
-    padding: 90px 0 30px;
+    padding: 90px 0 45px;
   /deep/ .el-carousel__button{
     width: 8px;
     height: 3px;

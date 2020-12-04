@@ -2,11 +2,13 @@
   <div id="app">
     <Header/>
     <router-view></router-view>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from '@c/header'
+import Footer from '@c/footer'
 export default {
   name:'app',
   data () {
@@ -14,13 +16,14 @@ export default {
     };
   },
   components:{
-    Header
+    Header,
+    Footer
   }
 
 }
 </script>
 <style>
-@import "//at.alicdn.com/t/font_2245784_mr1vvdhwyq.css";
+@import "//at.alicdn.com/t/font_2245784_wfvy4es5sc.css";
 </style>
 <style lang="scss">
 
