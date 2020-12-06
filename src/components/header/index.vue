@@ -3,7 +3,7 @@
   <header id='main-header'>
       <div class="container clearfix">
           <div class="logo-wrap left">
-              <h1><router-link to='home' class="logo"><img :src='require("@a/image/home.png")' alt="logo"></router-link></h1>
+              <h1><router-link to='/home' class="logo"><img :src='require("@a/image/home.png")' alt="logo"></router-link></h1>
           </div>
           <div class="right">
               <ul class='top-menu clearfix'>
@@ -16,16 +16,16 @@
                       </ul>
                   </div>
                   <li><a href="tel:0755-86566573">0755-86566573</a></li>
-                  <li><router-link to='home'>朗朗口腔集团官网</router-link></li>
+                  <li><router-link to='/home'>朗朗口腔集团官网</router-link></li>
               </ul>
               <ul class="nav-bar">
                   <li>首页</li>
-                  <li>走进朗朗
+                  <li><router-link to='/approach'>走进朗朗</router-link>
                       <ul class="menu-wrap">
-                          <li><router-link to='home'>朗朗简介</router-link></li>
-                          <li><router-link to='home'>朗朗优势</router-link></li>
-                          <li><router-link to='home'>核心团队</router-link></li>
-                          <li><router-link to='home'>朗朗历程</router-link></li>
+                          <li><router-link to='/approach/abstract'>朗朗简介</router-link></li>
+                          <li><router-link to='/approach/advantage'>朗朗优势</router-link></li>
+                          <li><router-link to='/home'>核心团队</router-link></li>
+                          <li><router-link to='/home'>朗朗历程</router-link></li>
                       </ul>
                   </li>
                   <li>资讯动态
@@ -149,6 +149,11 @@ export default {
         font-weight: bold;
         cursor: pointer;
         z-index: 10;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
         &::after{
                 content: '';
                 position: absolute;

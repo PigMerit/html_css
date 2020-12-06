@@ -12,6 +12,24 @@ const routes = [
 		path: '/home',
 		name: 'home',
 		component:() => import(/* webpackChunkName: "home" */ '../views/Home/index.vue')
+  },
+  {
+    path: '/approach',
+    name: 'approach',
+    redirect:'/approach/abstract',
+    component:() => import(/* webpackChunkName: "approachLL" */ '../views/ApproachLL/index.vue'),
+    children:[
+      {
+        path:'/approach/abstract',
+        name:'abstract',
+        component:()=>import(/* webpackChunkName: "abstract" */ '../views/ApproachLL/abstract.vue')
+      },
+      {
+        path:'/approach/advantage',
+        name:'advantage',
+        component:()=>import(/* webpackChunkName: "abstract" */ '../views/ApproachLL/advantage.vue')
+      }
+    ]
 	},
   // {
   //   path: '/about',
