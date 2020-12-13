@@ -28,9 +28,27 @@ const routes = [
         path:'/approach/advantage',
         name:'advantage',
         component:()=>import(/* webpackChunkName: "abstract" */ '../views/ApproachLL/advantage.vue')
-      }
+      },
     ]
-	},
+  },
+  {
+    path: '/counsel',
+    name: 'counsel',
+    redirect:'/counsel/hydt',
+    component:() => import(/* webpackChunkName: "approachLL" */ '../views/counsel/index.vue'),
+    children:[
+      {
+        path:'/counsel/hydt',
+        name:'hydt',
+        component:()=>import(/* webpackChunkName: "abstract" */ '../views/counsel/hydt.vue')
+      },
+      {
+        path:'/counsel/gyhd',
+        name:'gyhd',
+        component:()=>import(/* webpackChunkName: "abstract" */ '../views/counsel/gyhd.vue')
+      },
+    ]
+  }
   // {
   //   path: '/about',
   //   name: 'About',

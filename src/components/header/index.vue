@@ -30,10 +30,10 @@
                   </li>
                   <li>资讯动态
                       <ul class="menu-wrap">
-                          <li>朗朗简介</li>
-                          <li>朗朗优势</li>
-                          <li>核心团队</li>
-                          <li>朗朗历程</li>
+                          <li><router-link to='/counsel/hydt'>行业动态</router-link></li>
+                          <li><router-link to='/home'>朗朗资讯</router-link></li>
+                          <li><router-link to='/home'>媒体报道</router-link></li>
+                          <li><router-link to='/counsel/gyhd'>公益活动</router-link></li>
                       </ul>
                   </li>
                   <li>合作伙伴
