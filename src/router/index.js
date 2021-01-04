@@ -48,6 +48,19 @@ const routes = [
         component:()=>import(/* webpackChunkName: "abstract" */ '../views/counsel/gyhd.vue')
       },
     ]
+  },
+  {
+    path: '/cooperation',
+    name: 'cooperation',
+    redirect:'/cooperation/mzlb',
+    component:() => import(/* webpackChunkName: "approachLL" */ '../views/cooperation/index.vue'),
+    children:[
+      {
+        path:'/cooperation/mzlb',
+        name:'mzlb',
+        component:()=>import(/* webpackChunkName: "abstract" */ '../views/cooperation/mzlb.vue')
+      },
+    ]
   }
   // {
   //   path: '/about',

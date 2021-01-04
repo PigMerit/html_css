@@ -3,7 +3,7 @@
   <div id="hydt">
     <div class="content-wrap container">
       <ul v-for="(item,index) in curDataItems" :key='index'>
-        <FigureBox :figureInfo="data"  v-for="data in item" :key='data.title'/>
+        <FigureBox :figureInfo="data"  v-for="data in item" :key='data.title+Math.random()'/>
       </ul>
     </div>
     <el-pagination class='container' background layout="pager" :total="80" :page-size='12'>
